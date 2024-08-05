@@ -8,8 +8,8 @@ def main():
             print('''
 Please choose the color format for the generated color:
 1. RGB
-2. Hex
-3. RGBA
+2. RGBA
+3. Hex
 4. HSL
 5. HSLA
 6. CMYK
@@ -61,7 +61,7 @@ def generate_random_rgba_color() -> tuple[str, str]:
 
 def generate_random_hex_color() -> tuple[str, str]:
     color_format = 'HEX'
-    color = f'{randint(0, 0xFFFFFF):06X}'
+    color = f'#{randint(0, 0xFFFFFF):06X}'
     return color_format, color
 
 
